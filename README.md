@@ -1,5 +1,5 @@
-# set-phaser-to-stun
-Boilerplate for using Phaser JS and Webpack together. Just add your game!
+# Effective Chainsaw
+Amazing game about chainsaws
 
 # usage
 
