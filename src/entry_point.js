@@ -1,20 +1,22 @@
-import Phaser from 'phaser/dist/phaser.min.js'
+import Phaser from 'phaser/dist/phaser.js'
 import sum from './sum.js'
 
 // Assets alias is defined in webpack.config.js
-import PixelPhaser from 'Assets/textures/phaser.png'
+import SawfishSpritesheet from 'Assets/textures/sawfish.png'
+import SawfishData from 'Assets/textures/sawfish.json'
 import Jingle from 'Assets/sounds//music//phaser-jingle.wav'
 
 class Example extends Phaser.Scene {
   preload () {
-    this.load.image('phaser', PixelPhaser)
+    this.load.aseprite('sawfish', SawfishSpritesheet, SawfishData)
     this.load.audio('jingle', [Jingle])
   }
 
   create () {
+    this.anims.createFromAseprite('sawfish')
     const x = sum(125, 100)
     this.add.text(x, 100, 'Set Phaser to stun; you\'re good to go!', { fontFamily: 'sans' })
-    this.add.image(385, 290, 'phaser')
+    const ssprite = this.add.sprite(375, 290, 'sawfish').play({ key: 'spin', repeat: -1 })// eslint-disable-line no-unused-vars
     this.add.text(250, 500, 'No sound? Try clicking the panel.', { fontFamily: 'sans' })
     const music = this.sound.add('jingle')
     music.play()

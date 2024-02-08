@@ -1,0 +1,75 @@
+{ "frames": {
+   "0": {
+    "frame": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 100
+   },
+   "1": {
+    "frame": { "x": 60, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 100
+   },
+   "2": {
+    "frame": { "x": 120, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 100
+   },
+   "3": {
+    "frame": { "x": 180, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 100
+   },
+   "4": {
+    "frame": { "x": 240, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 100
+   },
+   "5": {
+    "frame": { "x": 300, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 300
+   },
+   "6": {
+    "frame": { "x": 360, "y": 0, "w": 60, "h": 20 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 60, "h": 20 },
+    "sourceSize": { "w": 60, "h": 20 },
+    "duration": 300
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.1-dev",
+  "image": "/home/dan/Projects/effective-chainsaw/assets/textures/sawfish.png",
+  "format": "I8",
+  "size": { "w": 420, "h": 20 },
+  "scale": "3",
+  "frameTags": [
+   { "name": "idle", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "spin", "from": 1, "to": 4, "direction": "forward" },
+   { "name": "eyebrows", "from": 5, "to": 6, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "main", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

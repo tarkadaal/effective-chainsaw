@@ -1,9 +1,9 @@
 {
-  "name": "SPTSTemplate",
+  "name": "a-fish-aint-chainsaw",
   "version": "1.0.0",
   "description": "",
   "config": {
-    "itchiotarget": "tarkadaal/set-phaser-to-stun"
+    "itchiotarget": "tarkadaal/a-fish-aint-chainsaw"
   },
 "standard": {
   "env": [ "jest" ]
