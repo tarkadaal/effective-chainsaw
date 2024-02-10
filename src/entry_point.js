@@ -20,7 +20,7 @@ class Example extends Phaser.Scene {
     this.anims.createFromAseprite('sawfish')
     // this.add.text(10, 50, 'CAPTAIN SAWFISH SAVES THE F**KING WORLD', { fontFamily: 'mono' })
     this.add.bitmapText(35, 70, 'coolfont', 'CAPTAIN SAWFISH SAVES THE F**KING WORLD!')
-    const ssprite = this.physics.add.sprite(200, 150, 'sawfish').play({ key: 'spin', repeat: -1 })// eslint-disable-line no-unused-vars
+    const ssprite = this.physics.add.sprite(200, 150, 'sawfish').play({ key: 'eyebrows', repeat: -1 })// eslint-disable-line no-unused-vars
 
     const bricks = this.physics.add.staticGroup()
     const brickConfigs = []
