@@ -4,18 +4,22 @@ import Phaser from 'phaser/dist/phaser.js'
 import SawfishSpritesheet from 'Assets/textures/sawfish.png'
 import SawfishData from 'Assets/textures/sawfish.json'
 import Jingle from 'Assets/sounds//music//phaser-jingle.wav'
-import Brick from 'Assets/textures/brick.png'
+import Brick from 'Assets/textures/brick2.png'
+import FontImage from 'Assets/fonts/calligro-page-0.png'
+import FontData from 'Assets/fonts/calligro-font.xml'
 
 class Example extends Phaser.Scene {
   preload () {
     this.load.aseprite('sawfish', SawfishSpritesheet, SawfishData)
     this.load.audio('jingle', [Jingle])
     this.load.image('brick', Brick)
+    this.load.bitmapFont('coolfont', FontImage, FontData)
   }
 
   create () {
     this.anims.createFromAseprite('sawfish')
-    this.add.text(10, 50, 'CAPTAIN SAWFISH SAVES THE F**KING WORLD', { fontFamily: 'mono' })
+    // this.add.text(10, 50, 'CAPTAIN SAWFISH SAVES THE F**KING WORLD', { fontFamily: 'mono' })
+    this.add.bitmapText(35, 70, 'coolfont', 'CAPTAIN SAWFISH SAVES THE F**KING WORLD!')
     const ssprite = this.physics.add.sprite(200, 150, 'sawfish').play({ key: 'spin', repeat: -1 })// eslint-disable-line no-unused-vars
 
     const bricks = this.physics.add.staticGroup()

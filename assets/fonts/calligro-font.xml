@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<font>
+	<info face="calligro-custom" size="12" unicode="1" bold="0" italic="0" stretchH="100" aa="100" padding="3,3,3,3" spacing="10,10" />
+	<common lineHeight="10" base="10" scaleW="60" scaleH="180" pages="1" />
+	<pages>
+		<page id="0" file="calligro-page-0.png" />
+	</pages>
+	<chars count="29">
+		<char id="33" x="0" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="65" x="6" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="66" x="12" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="67" x="18" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="68" x="24" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="69" x="30" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="70" x="36" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="71" x="42" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="72" x="48" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="73" x="54" y="0" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="74" x="0" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="75" x="6" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="76" x="12" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="77" x="18" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="78" x="24" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="79" x="30" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="80" x="36" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="81" x="42" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="82" x="48" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="83" x="54" y="8" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="84" x="0" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="85" x="6" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="86" x="12" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="87" x="18" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="88" x="24" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="89" x="30" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="90" x="36" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="42" x="42" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+		<char id="32" x="48" y="16" width="6" height="8" xoffset="0" yoffset="0" xadvance="8" page="0" chnl="15" />
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>
