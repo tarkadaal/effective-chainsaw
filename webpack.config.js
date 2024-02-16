@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/entry_point.js',
   mode: 'production',
+  cache: {
+    type: 'filesystem'
+  },
   plugins: [
     new HtmlWebpackPlugin(
       {
@@ -15,6 +18,27 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true
+  },
+  optimization: {
+    runtimeChunk: 'single',
+
+    splitChunks: {
+
+      cacheGroups: {
+
+        vendor: {
+
+          test: /[\\/]node_modules[\\/]/,
+
+          name: 'vendors',
+
+          chunks: 'all'
+
+        }
+
+      }
+
+    }
   },
   module: {
     rules: [
