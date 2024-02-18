@@ -19,27 +19,30 @@ class Example extends Phaser.Scene {
   create () {
     this.anims.createFromAseprite('sawfish')
     // this.add.text(10, 50, 'CAPTAIN SAWFISH SAVES THE F**KING WORLD', { fontFamily: 'mono' })
-    this.add.bitmapText(35, 70, 'coolfont', 'CAPTAIN SAWFISH SAVES THE F**KING WORLD!')
+    this.add.bitmapText(35, 70, 'coolfont', 'CAPTAIN SAWFISH IS BLASTING OFF AGAIN!')
     const sawfishShape = [[
       { x: 0, y: 0 },
       { x: 53, y: 0 },
       { x: 56, y: 2 },
-      { x: 59, y: 4 },
-      { x: 59, y: 6 },
+      //      { x: 59, y: 4 },
+      //      { x: 59, y: 6 },
       { x: 56, y: 7 },
       { x: 53, y: 9 },
-      { x: 0, y: 9 }
+      { x: 0, y: 9 },
+      { x: 0, y: 0 }
     ]]
     this.sawfish = this.matter.add.sprite(50, 150, 'sawfish', null, {
       shape: {
         type: 'fromVerts',
         verts: sawfishShape
       },
-      friction: 0.05,
-      frictionStatic: 0.2,
+      density: 1,
+      frictionStatic: 8,
+      frictionAir: 0.13,
       render: { sprite: { xOffset: 0, yOffset: 0.5 } }
     }
     )
+    this.sawfish.setFriction(0.4)
     this.sawfish.play({ key: 'eyebrows', repeat: -1 })// eslint-disable-line no-unused-vars
 
     for (let j = 0; j < 16; j++) {
@@ -51,7 +54,7 @@ class Example extends Phaser.Scene {
         )
       }
     }
-    this.matter.add.rectangle(200, 266, 600, 100, { isStatic: true })
+    this.matter.add.rectangle(200, 266, 600, 100, { isStatic: true, friction: 1 })
     const music = this.sound.add('jingle')
 
     music.play()
@@ -59,14 +62,18 @@ class Example extends Phaser.Scene {
   }
 
   update () {
-    const spinSpeed = this.sawfish.getAngularVelocity()
-    const velocity = this.sawfish.getVelocity()
+    // const spinSpeed = this.sawfish.getAngularVelocity()
     if (this.cursors.right.isDown) {
-      this.sawfish.setAngularVelocity(spinSpeed + (0.009 * velocity.x))
-      this.sawfish.setVelocity(velocity.x + 1.7)
+      // this.sawfish.setAngularVelocity(spinSpeed + (0.005 * velocity.x))
+      this.sawfish.applyForceFrom(this.sawfish.getBottomLeft(), { x: 0.39, y: -0.34 })
+      if (this.sawfish.anims.currentAnim.key !== 'spin') {
+        this.sawfish.play({ key: 'spin', repeat: -1 })
+      }
     } else {
       //      this.sawfish.setAngularVelocity(spinSpeed - 0.1)
-
+      if (this.sawfish.anims.currentAnim.key !== 'eyebrows') {
+        this.sawfish.play({ key: 'idle', repeat: -1 })
+      }
     }
   }
 }
@@ -81,8 +88,7 @@ const config = {
   physics: {
     default: 'matter',
     matter: {
-      gravity: { y: 0.8 },
-      debug: true
+      gravity: { y: 1.3 }
     }
   }
 }
